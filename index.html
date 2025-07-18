@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cool Cat Facts!</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+    }
+    #scary {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: black;
+      z-index: 9999;
+    }
+    #scary img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Top 10 Cat Facts 🐱</h1>
+  <p>Did you know cats can rotate their ears 180 degrees?</p>
+  <p>More amazing facts coming soon...</p>
+
+  <div id="scary">
+    <img src="https://i.imgur.com/o1Y3d4C.jpg" alt="Scary image">
+  </div>
+
+  <audio id="scream" src="https://www.myinstants.com/media/sounds/movie_1.mp3"></audio>
+
+  <script>
+    setTimeout(() => {
+      document.getElementById("scary").style.display = "block";
+      document.getElementById("scream").play();
+    }, 5000); // Triggers after 5 seconds
+  </script>
+
+</body>
+</html>
